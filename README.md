@@ -49,5 +49,5 @@ default via 192.168.3.1 dev eth0 src 192.168.3.17 metric 202
 ```
 
 **192.168.3.1** - default route. where packets should be sent when there isn't a specific route that applies, meaning the router (also known as the default gateway)  
-_(ignore the others, they are network interfaces created by apps - e.g docker)_
+_(ignore the others, they are network interfaces created by apps - e.g docker)_  
 **192.168.3.0/24** any packet sent to an IP address in the range of 192.168.3.0/24 should be sent through interface `eth0`, without the need to go through a router
